@@ -29,7 +29,7 @@ sudo yum -y --enablerepo=epel install jemalloc
 sudo rpm -Uvh ftp://195.220.108.108/linux/remi/enterprise/7/remi/x86_64/redis-3.2.1-1.el7.remi.x86_64.rpm
 sudo rpm -Uhv http://pkgs.repoforge.org/rpmforge-release/rpmforge-release-0.5.3-1.el7.rf.x86_64.rpm
 sudo yum -y groupinstall "Development Tools"
-sudo yum -y install git nodejs vim htop
+sudo yum -y install git nodejs vim htop wget
 # Download Redis config file
 sudo curl -o /etc/redis.conf https://gist.githubusercontent.com/stephencornelius/b32744ad3e6e9fadad1ab8485bf82e35/raw/4f636ec9c9724d7453d8d9943c4194b989b86aa4/redis.conf
 sudo systemctl start redis.service
